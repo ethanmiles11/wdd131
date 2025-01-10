@@ -142,7 +142,7 @@ figure figcaption {
     border-radius: 10px;
 }
 
-.right-card h4 {
+.right-card h2 {
     text-align: center;
     background-color: var(--secondary-color);
     margin-bottom: 1rem;
