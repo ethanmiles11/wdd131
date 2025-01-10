@@ -1,0 +1,187 @@
+:root {
+    --primary-color: #045442;
+    --secondary-color: #EFF1C5;
+    --accent1-color: #84CAE7;
+    --accent2-color: #D3C0D2;
+    --accent3-color: #815355;
+    --accent4-color: #77A0A9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding-top: 3rem;
+}
+
+header h1 {
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+header nav {
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: space-around;
+}
+
+header nav a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+    padding: 1rem;
+}
+
+header nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+main {
+    max-width: 75%;
+    margin: auto;
+    margin-top: 1.2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.left-card {
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.left-card h2 {
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0.75rem;
+}
+
+.left-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.left-text {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.left-text h3 {
+    color: black;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 4rem 1rem;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.profile-pic {
+    grid-column: 2 / 3;
+    padding: 1rem;
+    padding-top: 0;
+    padding-right: 1.2rem;
+}
+
+#about-me {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 1.3rem;
+    padding-bottom: 2.5rem;
+}
+
+#utah-description {
+    color: black;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+figure {
+    float: left;
+    padding: 1rem;
+    padding-top: 1.75rem;
+}
+
+figure img {
+    box-shadow: 0 0 5px #045442;
+}
+
+figure figcaption {
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.right-card {
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.right-card h4 {
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0.75rem;
+}
+
+.right-card ul {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    padding-left: 4rem;
+    justify-content: center;
+}
+
+.link-list {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.link-list a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 2rem;
+}
+
+.link-list a:hover {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}

@@ -27,7 +27,7 @@ header {
     background-color: var(--primary-color);
     padding-top: 3rem;
     grid-column: 1 / 4;
-    color: white;
+    color: var(--secondary-color);
     text-align: center;
 }
 
