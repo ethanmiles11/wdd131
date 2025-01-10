@@ -44,6 +44,7 @@ header nav a {
     font-weight: 500;
     width: 100%;
     padding: 1rem;
+    transition: 0.4s;
 }
 
 header nav a:hover {
@@ -173,7 +174,7 @@ figure figcaption {
 }
 
 .link-list a:hover {
-    background-color: var(--secondary-color);
+    background-color: #EFF1C5;
 }
 
 footer {
