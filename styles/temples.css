@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #045442;
+    --secondary-color: #EFF1C5;
+    --accent1-color: #84CAE7;
+    --accent2-color: #D3C0D2;
+    --accent3-color: #815355;
+    --accent4-color: #77A0A9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+h1 {
+    align-content: center;
+    padding: 1.75rem;
+    padding-left: 3rem;
+    padding-right: 0;
+}
+
+nav a {
+    display: none;
+    color: var(--secondary-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: black;
+    transition: 0.5s;
+}
+
+#menu {
+    font-size: 2.5rem;
+	border: 0;
+	background: none;
+	color: var(--secondary-color);
+	position: absolute;
+	top: 1rem;
+	right: 1.75rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+main {
+    max-width: 55%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    padding: 3rem;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+    place-items: center;
+}
+
+figure {
+    display: inline;
+}
+
+figure img {
+    box-shadow: 0 0 5px #045442;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+figure img:hover {
+    box-shadow: 0 0 55px #045442;
+    transition: 0.8s;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+
