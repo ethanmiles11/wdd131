@@ -75,7 +75,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 55%;
+    max-width: 70%;
     margin: auto;
 }
 
@@ -97,16 +97,19 @@ figure {
 
 figure img {
     box-shadow: 0 0 5px #045442;
+    max-width: 100%;
+    height: auto;
 }
 
 figcaption {
     text-align: center;
     font-size: 1rem;
     font-weight: 300;
+    padding-top: 0.5rem;
 }
 
 figure img:hover {
-    box-shadow: 0 0 55px #045442;
+    box-shadow: 0 0 60px #045442;
     transition: 0.8s;
 }
 
