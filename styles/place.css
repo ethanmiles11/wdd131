@@ -43,6 +43,8 @@ picture img {
     margin: auto;
     padding-bottom: 0.75rem;
     background-color: var(--primary-color);
+    width: 450px;
+    height: auto;
 }
 
 .data-container{
@@ -143,6 +145,8 @@ footer p {
 
     picture img {
         background-color: var(--secondary-color);
+        width: 1000px;
+        height: auto;
     }
     
     h1 {
