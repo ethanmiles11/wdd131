@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #ba0303;
+    --secondary-color: black;
+}
+
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -11,7 +17,7 @@ body {
 
 
 header {
-    background-color: #ba0303;
+    background-color: var(--primary-color);
     text-align: center;
     width: 450px;
     margin: auto;
@@ -36,11 +42,11 @@ picture img {
     display: block;
     margin: auto;
     padding-bottom: 0.75rem;
-    background-color: #ba0303;
+    background-color: var(--primary-color);
 }
 
 .data-container{
-    border: 1px solid black;
+    border: 1px solid var(--secondary-color);
     border-top: none;
     border-bottom: none;
     padding-top: 1rem;
@@ -65,7 +71,7 @@ h2 {
 }
 
 .weather-container {
-    border: 1px solid black;
+    border: 1px solid var(--secondary-color);
     border-top: 1px solid lightgrey;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
@@ -101,7 +107,7 @@ h3 {
 footer {
     max-width: 450px;
     margin: 0 auto;
-    background-color: #ba0303;
+    background-color: var(--primary-color);
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     text-align: center;
@@ -126,7 +132,7 @@ footer p {
     }
 
     header {
-        background-color: #ba0303;
+        background-color: var(--primary-color);
         text-align: center;
         width: 100%;
     }
@@ -136,7 +142,7 @@ footer p {
     }
 
     picture img {
-        background-color: black;
+        background-color: var(--secondary-color);
     }
     
     h1 {
