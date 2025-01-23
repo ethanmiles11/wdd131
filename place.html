@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Country/Place Assignment | Ethan Miles</title>
+    <meta name="description" content="Ethan Miles 'Place' page for WDD 131 - Dynamic Web Fundamentals class to meet all requirements in the week03 country/place page assignment.">
+    <meta name="author" content="Ethan Miles">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Switzerland</h1>
+    </header>
+
+    <main class="roboto-regular">
+        <picture>
+            <source srcset="images/switzerland-hero-large.webp" media="(min-width: 1024px)">
+            <img src="images/switzerland-mobile.webp" alt="A red train exiting a tunnel in the mountains in Switzerland">
+        </picture>
+
+        <section class="data-container">
+            <h2>Data</h2>
+            <div>
+                <p><strong>Area:</strong> 15,940 sq mi</p>
+                <p><strong>Population:</strong> 8,738,791</p>
+                <p><strong>Capital:</strong> Bern</p>
+                <p><strong>Languages:</strong> German, Italian, French</p>
+                <p><strong>Currency:</strong> Swiss franc</p>
+                <p><strong>Time Zone:</strong> UTC+1</p>
+            </div>
+        </section>
+
+        <section class="weather-container">
+            <h3>Weather</h3>
+            <img src="images/rain-icon.svg" alt="Small cartoon cloud with blue raindrops coming out the bottom">
+            <p><strong>Temperature:</strong><span id="temperature"> 9</span>°C</p>
+            <p><strong>Conditions:</strong> Light Rain</p>
+            <p><strong>Wind:</strong><span id="windSpeed"> 8</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </section>
+
+    </main>
+
+    <footer class="roboto-regular">
+        <p>&copy;<span id="currentyear"></span> | Ethan Miles | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
