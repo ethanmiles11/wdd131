@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #045442;
+    --secondary-color: #EFF1C5;
+    --accent1-color: #84CAE7;
+    --accent2-color: #D3C0D2;
+    --accent3-color: #815355;
+    --accent4-color: #77A0A9;
+}
+@media (min-width: 45.65rem) {
+    header {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav a {
+        align-content: center;
+        display: block;
+    }
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+}
