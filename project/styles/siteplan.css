@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #FF6600;
+    --background-color: #1F1F1F;
+}
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
