@@ -1,7 +1,8 @@
 :root {
     --primary-color: #007BFF;
     --secondary-color: #FF6600;
-    --background-color: #1F1F1F;
+    --background-color: #333333;
+    --background2-color: #001538;
 }
 
 .roboto-regular {
@@ -10,4 +11,38 @@
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.navBar {
+    background-color: var(--background2-color);
+    color: white;
+    padding: 2rem;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+.content div {
+    color: white;
+    background: var(--primary-color);
+}
+
+.content div:hover {
+    box-shadow: 0 0 20px var(--secondary-color);
+}
+
+.content section {
+    background-color: var(--secondary-color);
+    margin-top: 2rem;
 }
