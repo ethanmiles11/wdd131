@@ -1,0 +1,208 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #045442;
+    --secondary-color: #EFF1C5;
+    --accent1-color: #84CAE7;
+    --accent2-color: #D3C0D2;
+    --accent3-color: #815355;
+    --accent4-color: #77A0A9;
+}
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+h1 {
+    max-width: 375px;
+    margin: 2rem auto 0;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 2.79rem;
+    font-weight: 400 !important;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.webForm {
+    max-width: 375px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 1rem auto 2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.webForm label {
+    display: block;
+    padding-top: 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 410;
+    padding-bottom: 0.2rem;
+}
+
+.divLabel {
+    display: block;
+    padding-top: 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 410;
+}
+
+.optionalSpan {
+    color: blue;
+    font-size: 1rem;
+}
+
+.requiredSymbol {
+    color: red;
+}
+
+.webForm input[type="date"],
+.webForm select,
+.webForm textarea,
+.webForm input[type="text"] {
+    display: block;
+    background-color: rgb(241, 236, 236);
+    width: 80%;
+    height: 2rem;
+    font-size: 1rem;
+    resize: none;
+    border: 1px solid black;
+    padding-left: 0.4rem;
+    background-color: var(--secondary-color)
+}
+
+.overallRating label {
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.overallRating input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+
+.overallRating input[type="radio"]:checked {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+  }
+
+.checkboxLabel {
+    padding-top: .5rem !important;
+    font-size: 1.1rem !important;
+    padding-bottom: 0 !important;
+    display: flex !important;
+    gap: 0.5rem;
+
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid black;
+    background-color: var(--secondary-color);
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+}
+
+input[type="checkbox"]::after {
+    content: "✔";
+    font-size: 1.3rem;
+    position: absolute;
+    top: -7px;
+    right: -2px;
+    color: var(--secondary-color);
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+input[type="checkbox"]:checked::after {
+    transform: scale(1);
+}
+
+#writtenReview {
+    height: 6rem;
+}
+
+.webForm input[type="date"]:required,
+select:required {
+    border-left: 8px solid red;
+}
+
+.webForm input[type="date"]:required:valid,
+select:required:valid {
+    border-left: 8px solid green;
+}
+
+input[type="submit"] {
+    display: none;
+    cursor: pointer;
+}
+
+#button {
+    display: block;
+    margin: 2.5rem 4.5rem 2.5rem 0;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: white;
+    background: linear-gradient(to right, #0a8d71, #045442);
+    cursor: pointer;
+    z-index: 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+#button::after {
+    content: "";
+    background: linear-gradient(to right, #548ba3, #84CAE7);
+    height: 100%;
+    width: 0px;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 150ms ease-in-out;
+}
+
+#button:hover::after {
+    width: 100%;
+}
+
+#button:hover {
+    color: black;
+}
+

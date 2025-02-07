@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form | Ethan Miles</title>
+    <meta name="description" content="Ethan Miles week 05 Product Review Form assignment page">
+    <meta name="author" content="Ethan Miles">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header></header>    
+    <main>
+        <h1 class="roboto-regular">Leave a review!</h1>
+        <form action="review.html" method="get" class="roboto-regular webForm">
+
+            <label for="productName">Product Name<span class="requiredSymbol"> *</span></label>
+            <select name="productName" id="productName" required>
+                <option value="" disabled selected>Select a product...</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+
+            <div class="divLabel">Overall Rating<span class="requiredSymbol"> *</span></div>
+            <div class="overallRating">
+            <label><input type="radio" id="oneStar" name="rating" value="1star" required> &star;</label>
+            <label><input type="radio" id="twoStar" name="rating" value="2star" required> &star;&star;</label>
+            <label><input type="radio" id="threeStar" name="rating" value="3star" required> &star;&star;&star;</label>
+            <label><input type="radio" id="fourStar" name="rating" value="4star" required> &star;&star;&star;&star;</label>
+            <label><input type="radio" id="fiveStar" name="rating" value="5star" required> &star;&star;&star;&star;&star;</label>
+            </div>
+
+            <label for="installationDate">Date of Installation<span class="requiredSymbol"> *</span></label>
+            <input type="date" name="installationDate" id="installationDate" required>
+
+            <div class="divLabel">Which features did you find useful? <span class="optionalSpan">(Check all that apply)</span></div>
+            <label class="checkboxLabel"><input type="checkbox" name="durability" id="durabilityCheckbox" value="yes"> Durability</label>
+            <label class="checkboxLabel"><input type="checkbox" name="ease" id="easeOfUseCheckbox" value="yes"> Ease of Use</label>
+            <label class="checkboxLabel"><input type="checkbox" name="performance" id="performanceCheckbox" value="yes"> Performance</label>
+            <label class="checkboxLabel"><input type="checkbox" name="design" id="designCheckbox" value="yes"> Design</label>
+
+
+            <label for="writtenReview">Written Review <span class="optionalSpan">(Optional)</span></label>
+            <textarea name="review" id="writtenReview"></textarea>
+
+            <label for="userName">Your name <span class="optionalSpan">(Optional)</span></label>
+            <input type="text" id="userName" name="userName">
+
+            <label for="submitButton" id="button">
+            <input type="submit" value="Post My Review" id="submitButton">
+            Post My Review</label>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Ethan Miles | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
