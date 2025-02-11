@@ -46,17 +46,13 @@ function populateSelect() {
 
 populateSelect();
 
-
-const visitDisplay = document.getElementById("visits");
 const viewCount = document.getElementById("viewCount");
-let numVisits = Number(window.localStorage.getItem("visits-ls")) || 0;
+let numVisits = Number(localStorage.getItem("visits-ls")) || 0;
 
-if (numVisits === 0) {
-    visitDisplay.textContent = "This is your first visit!";
-} else if (numVisits === 1) {
-    visitDisplay.textContent = "You've visited us 1 time!";
-} else {
+if (numVisits !== 0) {
     viewCount.textContent = numVisits;
+} else {
+  viewCount.textContent = "This is your first visit!";
 }
 
 numVisits++;
