@@ -1,0 +1,212 @@
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #FF6600;
+    --background-color: #333333;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 400px;
+}
+
+main {
+    background-color: #333333;
+}
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: #0e2d4e;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    padding: 1rem;
+    font-size: 2.3rem;
+}
+
+nav a {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+    padding: 0.75rem;
+}
+
+nav a:hover {
+    background-color: #FF6600;
+}
+
+#menu {
+    font-size: 2.5rem;
+	border: 0;
+	background: none;
+	color: var(--secondary-color);
+	position: absolute;
+    max-width: 50px;
+    top: 10px;
+    right: 1.5rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "🟧";
+}
+
+#menu.open::after {
+    content: "X";
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    color: var(--primary-color);
+}
+
+.open a {
+    display: block;
+}
+
+#largeHero {
+    display: none;
+}
+
+#backgroundImage {
+    display: block;
+    width: 100%;
+    min-width: 320px;
+    opacity: 0.3;
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+.largeOnly {
+    position: relative;
+    top: 0;
+}
+
+#getStartedDiv {
+    position: absolute;
+    top: -575px;
+    height: 500px;
+    text-align: center;
+    min-width: 400px;
+}
+
+
+#getStarted {
+    color: white;
+    max-width: 300px;
+    margin-bottom: 4rem;
+    font-size: 1.75rem;
+}
+
+#startedButton {
+    text-decoration: none;
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+    max-width: 250px;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: white;
+    background: linear-gradient(to right, #0159b6, #042f5e);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    transition: color 0.3s;
+}
+
+#startedButton::after {
+    content: "";
+    background: linear-gradient(to right, #df5b02, #9c4810);
+    height: 100%;
+    width: 0px;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 150ms ease-in-out;
+}
+
+#startedButton:hover::after {
+    width: 100%;
+}
+
+.bottomContainer {
+    position: relative;
+    padding-bottom: 4rem;
+    margin-top: 3rem;
+    background-color: #333333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+    color: #ff761b;
+    border-top: 1px solid #007BFF;
+    padding-top: 2rem;
+    max-width: 325px;
+    margin-top: 1rem;
+}
+
+.bottomContainer a {
+    position: absolute;
+    top: 13.4rem;
+    left: 9.5rem;
+    padding: 1rem;
+    max-width: 150px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.75rem;
+    text-decoration: none;
+    background-color: #0063ce;
+    color: white;
+    border: 1px solid black;
+    transition: 0.2s ease-in-out;
+}
+
+.bottomImage {
+    opacity: 0.7;
+}
+
+.bottomContainer a:hover {
+    background-color: #FF6600;
+}
+
+.bottomLinks {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #0e2d4e;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
