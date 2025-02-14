@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Rocket Labs</title>
+    <meta name="description" content="WDD 131 Ethan Miles Final project settings page for Rocket Labs website; Settings page designed to help you find the most optimal settings">
+    <meta name="author" content="Ethan Miles">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/settings.css" media="screen and (max-width: 975px)">
+    <link rel="stylesheet" href="styles/settings-large.css" media="screen and (min-width: 975px)">
+    <script src="scripts/settings.js" defer></script>
+</head>
+
+<body class="background">
+    <header class="roboto-regular">
+        <h1>Rocket Labs</h1>
+        <button type="button" id="menu" aria-label="Menu button"></button>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Settings</a>
+            <a href="#">Tips</a>
+            <a href="#">Sign up</a>
+        </nav>
+    </header>
+
+    <main class="roboto-regular">
+        <h2>Optimize Your Gameplay</h2>
+        <p id="bodyP">Finding the perfect settings in Rocket League can make all the difference between a good play and a great one. Whether you're adjusting camera angles for better visibility, tweaking controller sensitivity for precise movements, or optimizing graphics for smoother performance, the right settings will elevate your game.</p>
+        
+        <h3>Camera/Sensitivity</h3>
+        <div class="iframeDiv">
+            <iframe src="https://www.youtube.com/embed/4wnD9-eUhu0" title="YouTube video player Best Settings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <h3>Graphics</h3>
+        <div class="iframeDiv">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/z7dhIGAHdtQ" title="YouTube video player Best Graphics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </main>
+
+    <footer class="roboto-regular">
+        <p>&copy;<span id="currentyear"></span> | Ethan Miles | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

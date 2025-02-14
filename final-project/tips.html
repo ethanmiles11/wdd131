@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips and Tricks | Rocket Labs</title>
+    <meta name="description" content="WDD 131 Ethan Miles Final project tips page for Rocket Labs website; Tips page designed to give tips to user based on skill and present training options">
+    <meta name="author" content="Ethan Miles">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/tips.css" media="screen and (max-width: 975px)">
+    <link rel="stylesheet" href="styles/tips-large.css" media="screen and (min-width: 975px)">
+    <script src="scripts/tips.js" defer></script>
+</head>
+
+<body>
+    <header class="roboto-regular">
+        <h1>Rocket Labs</h1>
+        <button type="button" id="menu" aria-label="Menu button"></button>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Settings</a>
+            <a href="#">Tips</a>
+            <a href="#">Sign up</a>
+        </nav>
+    </header>
+
+    <main>
+        <label for="skillLevel">Select your Rank:</label>
+        <select name="rank" id="skillLevel">
+            <option value="" disabled>--Select Rank--</option>
+            <option value="bronze">Bronze</option>
+            <option value="silver">Silver</option>
+            <option value="gold">Gold</option>
+            <option value="plat">Plat</option>
+            <option value="diamond">Diamond</option>
+            <option value="champ">Champ</option>
+            <option value="gc">Grand Champ</option>
+            <option value="ssl">SSL</option>
+        </select>
+        <img id="rankImage" src="" alt="Rank Image">
+
+        <button id="tipButton">Get Random Tip</button>
+        <button id="allTipsButton">See all tips for this rank</button>
+
+        <h2>Your Tip:</h2>
+        <p id="output"></p>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="roboto-regular">
+        <p>&copy;<span id="currentyear"></span> | Ethan Miles | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
