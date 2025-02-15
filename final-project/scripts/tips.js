@@ -242,12 +242,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const userRank = document.getElementById("skillLevel");
     const rankImage = document.getElementById("rankImage");
 
-    // Check if a rank is saved in local storage
     const savedRank = localStorage.getItem("userRank");
 
     if (savedRank) {
-        userRank.value = savedRank; // Set the selected option
-        updateImage(savedRank); // Update image based on stored rank
+        userRank.value = savedRank;
+        updateImage(savedRank);
     }
 
     userRank.addEventListener("change", function () {
