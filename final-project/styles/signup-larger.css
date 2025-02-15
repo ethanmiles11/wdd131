@@ -7,7 +7,7 @@
 }
 
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
     max-width: 1920px;
     box-sizing: border-box;
@@ -63,7 +63,7 @@ nav a {
     position: relative;
 }
 
-nav a::after{
+nav a::after {
     content: "";
     height: 100%;
     width: 0px;
@@ -92,7 +92,7 @@ h2 {
     color: white;
 }
 
-#bodyP{
+#bodyP {
     max-width: 90%;
     margin: 0 auto;
     padding: 1.5rem;
@@ -120,8 +120,7 @@ h2 {
 .webForm1 input[type="text"],
 .webForm1 input[type="tel"],
 .webForm1 input[type="email"],
-.webForm1 input[type="url"]
-{
+.webForm1 input[type="url"] {
     background-color: #eee;
     display: block;
     border: 1px solid #999;

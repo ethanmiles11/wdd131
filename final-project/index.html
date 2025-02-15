@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocket Labs | Ethan Miles</title>
-    <meta name="description" content="WDD 131 Ethan Miles Final project; Rocket Labs site designed to be a hub for all things Rocket league. A place to learn, grow, connect with others, and have fun.">
+    <meta name="description"
+        content="WDD 131 Ethan Miles Final project; Rocket Labs site designed to be a hub for all things Rocket league. A place to learn, grow, connect with others, and have fun.">
     <meta name="author" content="Ethan Miles">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/rocketlabs.css" media="screen and (max-width: 999px)">
-    <link rel="stylesheet" href="styles/rocketlabs-large.css" media="screen and (min-width: 1000px)">
-    <script src="scripts/rocketlabs.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css" media="screen and (max-width: 974px)">
+    <link rel="stylesheet" href="styles/index-large.css" media="screen and (min-width: 975px)">
+    <script src="scripts/index.js" defer></script>
 </head>
 
-<body>
+<body class="background">
     <header class="roboto-regular">
         <h1>Rocket Labs</h1>
         <button type="button" id="menu" aria-label="Menu button"></button>
         <nav>
             <a href="#">Home</a>
-            <a href="#">Settings</a>
-            <a href="#">Tips</a>
-            <a href="#">Sign up</a>
+            <a href="settings.html">Settings</a>
+            <a href="tips.html">Tips</a>
+            <a href="signup.html">Sign up</a>
         </nav>
     </header>
 
     <main class="content">
 
         <div class="roboto-regular container">
-            <img src="images/phone-background-final.jpg" alt="Rocket League orange fennec at Neo Tokyo" id="backgroundImage">
+            <img src="images/phone-background-final.jpg" alt="Rocket League orange fennec at Neo Tokyo"
+                id="backgroundImage">
             <img src="images/fennec-hero.jpg" alt="Large orange fennec in Neo Tokyo" id="largeHero">
             <div class="largeOnly">
                 <div id="getStartedDiv">
-                    <p id="getStarted">Your one stop shop for all things ROCKET LEAGUE. Discover new mechanics, gain invaluable insight into your play, join tournaments and much more.</p>
-                    <a href="#" id="startedButton">Get Started</a>
+                    <p id="getStarted">Your one stop shop for all things ROCKET LEAGUE. Discover new mechanics, gain
+                        invaluable insight into your play, join tournaments and much more.</p>
+                    <a href="signup.html" id="startedButton">Get Started</a>
                 </div>
                 <img src="images/rocket-labs-logo.png" alt="RocketLabs large logo" id="logo">
             </div>
         </div>
 
         <section class="roboto-regular bottomSection">
-            <a href="#" class="bottomLinks">
+            <a href="settings.html" class="bottomLinks">
                 <div class="bottomContainer">
                     <h2>Settings</h2>
                     <img src="images/settings-image.jpg" alt="Rocket league settings panel" class="bottomImage">
                 </div>
             </a>
-            <a href="#" class="bottomLinks">
+            <a href="tips.html" class="bottomLinks">
                 <div class="bottomContainer">
                     <h2>Tips</h2>
-                    <img src="images/tips-image.jpg" alt="Two cars; one with a check, one with a red X" class="bottomImage">
-                    <!-- <a href="#">Improve!</a> -->
+                    <img src="images/tips-image.jpg" alt="Two cars; one with a check, one with a red X"
+                        class="bottomImage">
                 </div>
             </a>
-            <a href="#" class="bottomLinks">
+            <a href="signup.html" class="bottomLinks">
                 <div class="bottomContainer">
-                
                     <h2>Sign up</h2>
                     <img src="images/signup-image.jpg" alt="Multiple cars lunging towards a goal" class="bottomImage">
                 </div>

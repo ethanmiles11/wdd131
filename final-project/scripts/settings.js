@@ -9,7 +9,7 @@ document.getElementById('lastModified').textContent = `Last edited: ${lastModifi
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector("nav");
 
-hamButton.addEventListener("click", function() {
+hamButton.addEventListener("click", function () {
     navigation.classList.toggle("open");
     hamButton.classList.toggle("open");
 });

@@ -8,14 +8,14 @@ document.getElementById('lastModified').textContent = `Last edited: ${lastModifi
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector("nav");
 
-hamButton.addEventListener("click", function() {
+hamButton.addEventListener("click", function () {
     navigation.classList.toggle("open");
     hamButton.classList.toggle("open");
 });
 
 
 
-document.getElementById("signupForm").addEventListener("submit", function(event) {
+document.getElementById("signupForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
     const name = document.getElementById("firstname").value;
@@ -27,7 +27,7 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
 });
 
 
-window.onload = function() {
+window.onload = function () {
     const storedName = localStorage.getItem("userName");
 
     if (storedName) {

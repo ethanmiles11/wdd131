@@ -8,7 +8,7 @@ document.getElementById('lastModified').textContent = `Last edited: ${lastModifi
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector("nav");
 
-hamButton.addEventListener("click", function() {
+hamButton.addEventListener("click", function () {
     navigation.classList.toggle("open");
     hamButton.classList.toggle("open");
 });
@@ -17,13 +17,13 @@ const rocketTips = {
     bronze: {
         mechanics: [
             "Focus on making solid contact with the ball every time. You can practice this in freeplay, just keep trying and get better at hitting the ball directly on to avoid whiffing.",
-            "When hitting the ball, make sure to use your boost to generate more power. Boosting while hitting the ball gives you more speed and force, allowing for stronger shots and clears.", 
+            "When hitting the ball, make sure to use your boost to generate more power. Boosting while hitting the ball gives you more speed and force, allowing for stronger shots and clears.",
             "Focus on staying on the ground for the most part. A lot of Bronze players try to go for aerials too early, but mastering ground control will help you make consistent touches and clear the ball effectively."
         ],
         positioning: [
             "Always try to position yourself behind the ball. This ensures you're ready to challenge it, whether it's a clear, shot, or pass, and helps prevent you from being out of position.",
             "After you go for an offensive play, always rotate back to your goal or defensive position. This ensures that you're ready for a quick counterattack and avoids leaving your team open.",
-            "Stay spaced out from teammates to avoid double commits.", 
+            "Stay spaced out from teammates to avoid double commits.",
             "Don’t chase the ball. Wait for the right moment."
         ],
         boostManagement: [
@@ -35,13 +35,13 @@ const rocketTips = {
     silver: {
         mechanics: [
             "Focus on making solid contact with the ball every time. You can practice this in freeplay, just keep trying and get better at hitting the ball directly on to avoid whiffing.",
-            "When hitting the ball, make sure to use your boost to generate more power. Boosting while hitting the ball gives you more speed and force, allowing for stronger shots and clears.", 
+            "When hitting the ball, make sure to use your boost to generate more power. Boosting while hitting the ball gives you more speed and force, allowing for stronger shots and clears.",
             "Focus on staying on the ground for the most part. A lot of Bronze players try to go for aerials too early, but mastering ground control will help you make consistent touches and clear the ball effectively."
         ],
         positioning: [
             "Always try to position yourself behind the ball. This ensures you're ready to challenge it, whether it's a clear, shot, or pass, and helps prevent you from being out of position.",
             "After you go for an offensive play, always rotate back to your goal or defensive position. This ensures that you're ready for a quick counterattack and avoids leaving your team open.",
-            "Stay spaced out from teammates to avoid double commits.", 
+            "Stay spaced out from teammates to avoid double commits.",
             "Don’t chase the ball. Wait for the right moment."
         ],
         boostManagement: [
@@ -53,14 +53,14 @@ const rocketTips = {
     gold: {
         mechanics: [
             "Focus on making solid contact with the ball every time. You can practice this in freeplay, just keep trying and get better at hitting the ball directly on to avoid whiffing.",
-            "When hitting the ball, make sure to use your boost to generate more power. Boosting while hitting the ball gives you more speed and force, allowing for stronger shots and clears.", 
+            "When hitting the ball, make sure to use your boost to generate more power. Boosting while hitting the ball gives you more speed and force, allowing for stronger shots and clears.",
             "Focus on staying on the ground for the most part. A lot of Bronze players try to go for aerials too early, but mastering ground control will help you make consistent touches and clear the ball effectively.",
             "Use front flips for faster movement."
         ],
         positioning: [
             "Always try to position yourself behind the ball. This ensures you're ready to challenge it, whether it's a clear, shot, or pass, and helps prevent you from being out of position.",
             "After you go for an offensive play, always rotate back to your goal or defensive position. This ensures that you're ready for a quick counterattack and avoids leaving your team open.",
-            "Stay spaced out from teammates to avoid double commits.", 
+            "Stay spaced out from teammates to avoid double commits.",
             "Don’t chase the ball. Wait for the right moment."
         ],
         boostManagement: [
@@ -72,7 +72,7 @@ const rocketTips = {
     plat: {
         mechanics: [
             "Focus on making solid contact with the ball every time. You can practice this in freeplay, just keep trying and get better at hitting the ball directly on to avoid whiffing.",
-            "When hitting the ball, make sure to use your boost to generate more power. Boosting while hitting the ball gives you more speed and force, allowing for stronger shots and clears.", 
+            "When hitting the ball, make sure to use your boost to generate more power. Boosting while hitting the ball gives you more speed and force, allowing for stronger shots and clears.",
             "Start practicing aerials to contest high balls.",
             "Learn powerslide for faster recoveries and start trying to recover every time you're bumped. Use bakkesmod maps like Hornets Nest.",
             "Get comfortable with half-flips for quick turnarounds.",
@@ -82,7 +82,7 @@ const rocketTips = {
         positioning: [
             "Always try to position yourself behind the ball. This ensures you're ready to challenge it, whether it's a clear, shot, or pass, and helps prevent you from being out of position.",
             "After you go for an offensive play, always rotate back to your goal or defensive position. This ensures that you're ready for a quick counterattack and avoids leaving your team open.",
-            "Stay spaced out from teammates to avoid double commits.", 
+            "Stay spaced out from teammates to avoid double commits.",
             "Don’t chase the ball. Wait for the right moment.",
             "Be aware of your last man’s position before pushing up.",
             "Don’t cut rotation—play smart defense."
@@ -97,7 +97,7 @@ const rocketTips = {
     },
     diamond: {
         mechanics: [
-            "When hitting the ball, make sure to use your boost to generate more power. Boosting while hitting the ball gives you more speed and force, allowing for stronger shots and clears.", 
+            "When hitting the ball, make sure to use your boost to generate more power. Boosting while hitting the ball gives you more speed and force, allowing for stronger shots and clears.",
             "Start mastering your aerials through workshop maps and freeplay. Begin to practice air dribbles.",
             "Learn powerslide for faster recoveries and start trying to recover every time you're bumped. Use bakkesmod maps like Hornets Nest.",
             "Get comfortable with half-flips for quick turnarounds.",
@@ -107,7 +107,7 @@ const rocketTips = {
         ],
         positioning: [
             "After you go for an offensive play, always rotate back to your goal or defensive position. This ensures that you're ready for a quick counterattack and avoids leaving your team open.",
-            "Stay spaced out from teammates to avoid double commits.", 
+            "Stay spaced out from teammates to avoid double commits.",
             "Don’t chase the ball. Wait for the right moment.",
             "Be aware of your last man’s position before pushing up.",
             "Don’t cut rotation—play smart defense.",
@@ -123,7 +123,7 @@ const rocketTips = {
         ]
     },
     champ: {
-        mechanics: [ 
+        mechanics: [
             "Start mastering your aerials through workshop maps and freeplay. Begin to practice air dribbles.",
             "Learn powerslide for faster recoveries and start trying to recover every time you're bumped. Use bakkesmod maps like Hornets Nest.",
             "Get comfortable with half-flips for quick turnarounds.",
@@ -135,7 +135,7 @@ const rocketTips = {
             "Learn bounce dribbles to create more threatening attacks."
         ],
         positioning: [
-            "Stay spaced out from teammates to avoid double commits.", 
+            "Stay spaced out from teammates to avoid double commits.",
             "Don’t chase the ball. Wait for the right moment.",
             "Be aware of your last man’s position before pushing up.",
             "Don’t cut rotation—play smart defense.",
@@ -210,9 +210,9 @@ function getAllTips() {
     let outputText = `Here are all ${userRank} tips:<br>`;
 
     categories.forEach(category => {
-      const tipsArray = rocketTips[userRank][category];
-      const formattedTips = tipsArray.map((tip, index) => `🔹 ${category.toUpperCase()} - Tip ${index + 1}: ${tip}`).join("<br>");
-      outputText += `<br>${formattedTips}`;
+        const tipsArray = rocketTips[userRank][category];
+        const formattedTips = tipsArray.map((tip, index) => `🔹 ${category.toUpperCase()} - Tip ${index + 1}: ${tip}`).join("<br>");
+        outputText += `<br>${formattedTips}`;
     });
 
     document.getElementById("output").innerHTML = outputText;

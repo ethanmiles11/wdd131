@@ -8,7 +8,7 @@
     }
 
     * {
-        margin: 0; 
+        margin: 0;
         padding: 0;
         max-width: 1920px;
         box-sizing: border-box;
@@ -64,7 +64,7 @@
         position: relative;
     }
 
-    nav a::after{
+    nav a::after {
         content: "";
         height: 100%;
         width: 0px;
@@ -92,7 +92,7 @@
         text-align: center;
     }
 
-    #bodyP{
+    #bodyP {
         max-width: 850px;
         margin: 0 auto;
         padding: 2rem;
@@ -127,7 +127,8 @@
         resize: both;
     }
 
-    .iframeDiv::after, .iframeDiv::before{
+    .iframeDiv::after,
+    .iframeDiv::before {
         content: '';
         position: absolute;
         height: 100%;
@@ -142,7 +143,7 @@
         background-image: conic-gradient(#FF6600, #007bff, rgb(250, 235, 235), #FF6600, #007bff, rgb(250, 235, 235), #FF6600);
     }
 
-    .iframeDiv::before{
+    .iframeDiv::before {
         filter: blur(1.5rem);
     }
 
