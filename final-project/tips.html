@@ -14,7 +14,7 @@
     <script src="scripts/tips.js" defer></script>
 </head>
 
-<body>
+<body class="background">
     <header class="roboto-regular">
         <h1>Rocket Labs</h1>
         <button type="button" id="menu" aria-label="Menu button"></button>
@@ -26,37 +26,44 @@
         </nav>
     </header>
 
-    <main>
-        <label for="skillLevel">Select your Rank:</label>
-        <select name="rank" id="skillLevel">
-            <option value="" disabled>--Select Rank--</option>
-            <option value="bronze">Bronze</option>
-            <option value="silver">Silver</option>
-            <option value="gold">Gold</option>
-            <option value="plat">Plat</option>
-            <option value="diamond">Diamond</option>
-            <option value="champ">Champ</option>
-            <option value="gc">Grand Champ</option>
-            <option value="ssl">SSL</option>
-        </select>
-        <img id="rankImage" src="" alt="Rank Image">
+    <main class="roboto-regular">
+        <h2>Tips Customized for YOU</h2>
+
+        <div class="rankDiv">
+            <label for="skillLevel" id="rankLabel">Select your Rank:</label>
+            <select name="rank" id="skillLevel">
+                <option value="" selected disabled>--Select Rank--</option>
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+                <option value="plat">Plat</option>
+                <option value="diamond">Diamond</option>
+                <option value="champ">Champ</option>
+                <option value="gc">Grand Champ</option>
+                <option value="ssl">SSL</option>
+            </select>
+            <img id="rankImage">
+        </div>
 
         <button id="tipButton">Get Random Tip</button>
         <button id="allTipsButton">See all tips for this rank</button>
 
-        <h2>Your Tip:</h2>
+        <h3>Your Tip:</h3>
         <p id="output"></p>
 
+        <h4>Training pack codes:</h4>
+        <div>
+            <p class="tipsBottom">-Corrupted V3: AF68-891D-0AD5-19FA</p>
+            <p class="tipsBottom">-The Ultimate Warmup: FA24-B2B7-2E8E-193B</p>
+            <p class="tipsBottom">-#1 shadow defense - Nimbus: 29E9-E595-D6CD-0599</p>
+            <p class="tipsBottom">-Backboard Defense: 99E5-4AA3-60D5-44BD</p>
+            <p class="tipsBottom">-Double Tap Playground: CAFC-FB3E-3C0F-B8F1</p>
+            <p class="tipsBottom">-Backboard Therapy: D7F8-FD53-98D1-DAFE</p>
+        </div>
 
-
-
-
-
-
-
-
-
-
+        <h4>BakkesMod</h4>
+        <p class="tipsBottom">If you don't use BakkesMod to help with your gameplay, you are doing yourself a disservice. BakkesMod provides training plugins, in-game advice, additional training maps and some pretty sick cosmetics!</p>
+        <a href="https://bakkesmod.com/download.php" id="bakkesmod" target="_blank">Download Here</a>
     </main>
 
     <footer class="roboto-regular">

@@ -5,7 +5,6 @@ const lastModifiedDate = new Date(document.lastModified).toLocaleDateString();
 document.getElementById('lastModified').textContent = `Last edited: ${lastModifiedDate}`;
 
 
-
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector("nav");
 
@@ -208,7 +207,7 @@ function getAllTips() {
     localStorage.setItem("userRank", userRank);
 
     const categories = Object.keys(rocketTips[userRank]);
-    let outputText = `Here are some ${userRank} tips:<br>`;
+    let outputText = `Here are all ${userRank} tips:<br>`;
 
     categories.forEach(category => {
       const tipsArray = rocketTips[userRank][category];
@@ -218,14 +217,6 @@ function getAllTips() {
 
     document.getElementById("output").innerHTML = outputText;
 }
-
-
-window.onload = function() {
-    const savedRank = localStorage.getItem("userRank");
-    if (savedRank) {
-      document.getElementById("skillLevel").value = savedRank;
-    }
-};
 
 
 function getRandomTip() {
@@ -247,41 +238,71 @@ const allTipsButton = document.getElementById("allTipsButton");
 allTipsButton.addEventListener("click", getAllTips);
 
 
-document.getElementById('skillLevel').addEventListener('change', function() {
-    const rank = this.value;
-    const rankImage = document.getElementById('rankImage');
-    
-    let imagePath = '';
+document.addEventListener("DOMContentLoaded", function () {
+    const userRank = document.getElementById("skillLevel");
+    const rankImage = document.getElementById("rankImage");
 
-    // Conditional logic for different ranks
-    switch(rank) {
-        case 'bronze':
-            imagePath = 'images/bronze.png';
-            break;
-        case 'bronze':
-            imagePath = 'images/bronze.png';
-            break;
-        case 'bronze':
-            imagePath = 'images/bronze.png';
-            break;
-        case 'bronze':
-            imagePath = 'images/bronze.png';
-            break;
-        case 'diamond':
-            imagePath = 'https://example.com/diamond-image.jpg';
-            break;
-        case 'diamond':
-            imagePath = 'https://example.com/diamond-image.jpg';
-            break;
-        case 'diamond':
-            imagePath = 'https://example.com/diamond-image.jpg';
-            break;
-        case 'diamond':
-            imagePath = 'https://example.com/diamond-image.jpg';
-            break;
-        default:
-            imagePath = '';
+    // Check if a rank is saved in local storage
+    const savedRank = localStorage.getItem("userRank");
+
+    if (savedRank) {
+        userRank.value = savedRank; // Set the selected option
+        updateImage(savedRank); // Update image based on stored rank
     }
 
-    rankImage.src = imagePath;
+    userRank.addEventListener("change", function () {
+        const rank = this.value;
+
+        // Save selected rank in local storage
+        localStorage.setItem("userRank", rank);
+
+        // Update image
+        updateImage(rank);
+    });
+
+    function updateImage(rank) {
+        let imagePath = "";
+        let imageAlt = "";
+
+        switch (rank) {
+            case "bronze":
+                imagePath = "images/bronze.png";
+                imageAlt = "Bronze Rank Image";
+                break;
+            case "silver":
+                imagePath = "images/silver.png";
+                imageAlt = "Silver Rank Image";
+                break;
+            case "gold":
+                imagePath = "images/gold.png";
+                imageAlt = "Gold Rank Image";
+                break;
+            case "plat":
+                imagePath = "images/plat.png";
+                imageAlt = "Platinum Rank Image";
+                break;
+            case "diamond":
+                imagePath = "images/diamond.png";
+                imageAlt = "Diamond Rank Image";
+                break;
+            case "champ":
+                imagePath = "images/champ.png";
+                imageAlt = "Champion Rank Image";
+                break;
+            case "gc":
+                imagePath = "images/gc.png";
+                imageAlt = "Grand Champion Rank Image";
+                break;
+            case "ssl":
+                imagePath = "images/ssl.png";
+                imageAlt = "Supersonic Legend Rank Image";
+                break;
+            default:
+                imagePath = "";
+                imageAlt = "";
+        }
+
+        rankImage.src = imagePath;
+        rankImage.alt = imageAlt;
+    }
 });
